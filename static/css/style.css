@@ -1,0 +1,41 @@
+/* Общие стили */
+body {
+    background-color: #f0f4f8; /* Нежный фон */
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    display: flex;
+    justify-content: center; /* Центрируем основной контейнер */
+}
+
+/* Контейнер для игры */
+.container {
+    max-width: 400px; /* Основной контейнер */
+    margin: 20px; /* Отступы */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Заголовки */
+h1 {
+    color: #007bff;
+}
+
+/* Стили для угаданных букв */
+.correct-guesses {
+    font-size: 2em;
+    letter-spacing: 10px;
+    color: #495057;
+}
+
+/* Стили для форм и кнопок */
+.form-control {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.btn-primary, .btn-danger {
+    width: 100%;
+    border-radius: 5px;
+}

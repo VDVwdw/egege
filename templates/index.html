@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай Слово</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">  <!-- Подключаем файл стилей -->
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1>Угадай Слово</h1>
+        <p>Длина слова: <span id="word_length">_</span></p>
+        <p>Попытки: <span id="attempts">0</span></p>
+        <h2 id="correct_guesses">_ _ _ _ _</h2>
+        <p>Введите букву:</p>
+
+        <form id="guess-form">
+            <div class="form-group">
+                <input type="text" id="guess_word" class="form-control" placeholder="Введите букву" required maxlength="1">
+            </div>
+            <button type="submit" class="btn btn-primary">Угадать</button>
+            <button id="give-up-btn" class="btn btn-danger mt-3">Я сдаюсь</button>
+        </form>
+    </div>
+
+    <div class="advertisement">
+        <h4>Реклама</h4>
+        <p>Ваш текст рекламы здесь!</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
